@@ -1,0 +1,103 @@
+.header{
+    background-color: #ff0000;
+    text-align: center;
+    width: 100%;
+    float: none;
+    padding: 30px 40px;
+}
+.nav{
+    background-color: #ff8000;
+    text-align: center;
+    width: 100%
+    float: none;
+    padding: 10px 10px;
+}
+.siderbar{
+    background-color: #ffff00;
+    text-align: center;
+    width: 25%;
+    float: left;
+    height:100px;
+}
+.main{
+    background-color: #15b23f;
+    text-align: center;
+    width: 75%;
+    float: right;
+    height:100px;
+}
+.footer{
+    background-color: #04b2ff;
+    text-align: center;
+    width: 100%;
+    float: none;
+    height:200px;    
+}
+
+.nav>li{
+
+  display: inline-block;
+  position: relative;
+
+  /* 外觀樣式 */
+  border: 1px solid #cb78ff;
+  border-right: 0;
+  padding: .5em 1em;
+  margin-left: -5px;
+  box-sizing: border-box;
+  width: 25%;
+}
+/* 外觀樣式 */
+.nav>li:last-child{
+  border-right: 1px solid #75b0f5;
+}
+.submenu{
+  /* 外觀樣式 */
+  background: rgb(44, 181, 214);
+  padding: 0px;
+  border: 1px solid #3f4105
+  border-radius: 5px;
+  width: 180px;
+  
+  /* 讓 .submenu 變成 absolute positioning */
+  position: absolute;
+  
+  left: -1px; 
+  top: 100%; 
+  
+  
+  /* 隱藏 .submenu */
+  display: none;
+  
+}
+/* 外觀樣式 */
+.submenu li{
+  padding: .5em 15px;
+  color: #d12d85;
+  cursor: pointer;
+  list-style-type:none;
+}
+
+.nav>li:hover .submenu{
+  /* 滑鼠移到 .nav 的 li 上時，顯示 .submenu */
+  display: block;
+  
+}
+
+/*外觀樣式*/
+.submenu li:hover{
+  color: #000000;
+  background: #ffbf30;
+}
+.circle{float:right; position: relative;
+    width:100px;
+    height:100px;
+    border-radius: 100%;
+    font-size:23px;
+    font-family: Arial;
+    font-weight: 100;
+    color:#ffffff;
+    line-height:55px;
+    text-align:center;
+    background:#ff0000;
+}
